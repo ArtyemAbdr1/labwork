@@ -16,18 +16,20 @@ import java.awt.Desktop;
 
 public class io extends JFrame {
 	
-private JLabel labelbttn = new JLabel("кнопка информации добавлена");
+private JLabel labelbttn = new JLabel("ГЄГ­Г®ГЇГЄГ  ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г¤Г®ГЎГ ГўГ«ГҐГ­Г ");
 private JTextField input = new JTextField("");
-private JButton button = new JButton("Рассчитать м^3");
-private JButton buttonsm = new JButton("Рассчитать cм^3");
-private JButton button2 = new JButton("Мнемосхема");
-private JButton buttoninfo = new JButton("Информация");
-private JLabel label = new JLabel("ПИ-320");
-private JLabel labelFGB = new JLabel("ФГБОУ ВО");
-private JLabel label2 = new JLabel("Абрашитов Артём Маратович");
-private JLabel label22 = new JLabel("Абрашитов Артём Маратович lekciipobd@gmail.com");
+private JButton button = new JButton("ГђГ Г±Г±Г·ГЁГІГ ГІГј Г¬^3");
+private JButton buttonsm = new JButton("ГђГ Г±Г±Г·ГЁГІГ ГІГј cГ¬^3");
+private JButton button2 = new JButton("ГЊГ­ГҐГ¬Г®Г±ГµГҐГ¬Г ");
+private JButton buttoninfo = new JButton("Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї");
+private JLabel label = new JLabel("ГЏГ€-320");
+private JLabel labelFGB = new JLabel("Г”ГѓГЃГЋГ“ Г‚ГЋ");
+private JLabel label2 = new JLabel("ГЂГЎГ°Г ГёГЁГІГ®Гў ГЂГ°ГІВёГ¬ ГЊГ Г°Г ГІГ®ГўГЁГ·");
+private JLabel label22 = new JLabel("ГЂГЎГ°Г ГёГЁГІГ®Гў ГЂГ°ГІВёГ¬ ГЊГ Г°Г ГІГ®ГўГЁГ· lekciipobd@gmail.com");
+private JLabel label2 = new JLabel("ГЂГЎГ°Г ГёГЁГІГ®Гў1 ГЂГ°ГІВёГ¬1 ГЊГ Г°Г ГІГ®ГўГЁГ· lolkash52@gmail.com");
+private JLabel label22 = new JLabel("ГЂГЎГ°Г ГёГЁГІГ®Гў2 ГЂГ°ГІВёГ¬2 ГЊГ Г°Г ГІГ®ГўГЁГ· ");
 private JLabel label3 = new JLabel();
-private JLabel labelUSATU = new JLabel("Уфимский государственный авиационный технический университет");
+private JLabel labelUSATU = new JLabel("Г“ГґГЁГ¬Г±ГЄГЁГ© ГЈГ®Г±ГіГ¤Г Г°Г±ГІГўГҐГ­Г­Г»Г© Г ГўГЁГ Г¶ГЁГ®Г­Г­Г»Г© ГІГҐГµГ­ГЁГ·ГҐГ±ГЄГЁГ© ГіГ­ГЁГўГҐГ°Г±ГЁГІГҐГІ");
 public io() {
 super("Simple Example");
 this.setBounds(700,700,400,300);
@@ -114,7 +116,7 @@ if (Desktop.isDesktopSupported()) {
 class ButtonEventListener implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		double value = (7*Integer.parseInt(input.getText())*40);
-		label3.setText("Объем параллелограмма = "+value/1000+"м^3");
+		label3.setText("ГЋГЎГєГҐГ¬ ГЇГ Г°Г Г«Г«ГҐГ«Г®ГЈГ°Г Г¬Г¬Г  = "+value/1000+"Г¬^3");
 	}
 }
 class infoopen implements ActionListener{
@@ -126,7 +128,7 @@ class infoopen implements ActionListener{
 class SMB implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		double value = (70*Integer.parseInt(input.getText())*400);
-		label3.setText("Объем параллелограмма = "+value+"cм^3");
+		label3.setText("ГЋГЎГєГҐГ¬ ГЇГ Г°Г Г«Г«ГҐГ«Г®ГЈГ°Г Г¬Г¬Г  = "+value+"cГ¬^3");
 	}
 }
 class SecondEventListener implements ActionListener{
