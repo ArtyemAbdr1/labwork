@@ -26,6 +26,8 @@ private JLabel label = new JLabel("ПИ-320");
 private JLabel labelFGB = new JLabel("ФГБОУ ВО");
 private JLabel label2 = new JLabel("Абрашитов Артём Маратович");
 
+private JLabel label2 = new JLabel("Абрашитов1 Артём1 Маратович lolkash52@gmail.com");
+private JLabel label22 = new JLabel("Абрашитов2 Артём2 Маратович ");
 private JLabel label3 = new JLabel();
 private JLabel labelUSATU = new JLabel("Уфимский государственный авиационный технический университет");
 public io() {
@@ -38,11 +40,12 @@ buttoninfo.addActionListener(new infoopen());
 buttonsm.addActionListener(new SMB());
 setContentPane(new BgPanel());
 Container container = this.getContentPane();
-container.setLayout(new GridLayout(12,2,2,2));
+container.setLayout(new GridLayout(14,2,2,2));
 container.add(labelUSATU);
 container.add(labelFGB);
 container.add(label);
 container.add(label2);
+container.add(label22);
 container.add(input);
 container.add(button);
 container.add(buttonsm);
