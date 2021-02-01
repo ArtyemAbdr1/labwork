@@ -7,18 +7,14 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class info extends JFrame  {
-	private JLabel label = new JLabel("ПИ-320");
-	private JLabel labelFGB = new JLabel("ФГБОУ ВО");
-	private JLabel label2 = new JLabel("Абрашитов Артём Маратович");
-	private JLabel labelUSATU = new JLabel("Уфимский государственный авиационный технический университет");
+	private JLabel label = new JLabel("GitHub");
+	private JLabel label2 = new JLabel("GitHub - крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки.");
 	public info() {
-	super("Simple Example");
-	this.setBounds(700,700,400,300);
+	super("Информация");
+	this.setBounds(700,700,600,150);
 	this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	Container container = this.getContentPane();
-	container.setLayout(new GridLayout(12,2,2,2));
-	container.add(labelUSATU);
-	container.add(labelFGB);
+	container.setLayout(new GridLayout(6,2,2,2));
 	container.add(label);
 	container.add(label2);
 }}

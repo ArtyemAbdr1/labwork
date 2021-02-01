@@ -25,6 +25,7 @@ private JButton buttoninfo = new JButton("Информация");
 private JLabel label = new JLabel("ПИ-320");
 private JLabel labelFGB = new JLabel("ФГБОУ ВО");
 private JLabel label2 = new JLabel("Абрашитов Артём Маратович");
+
 private JLabel label3 = new JLabel();
 private JLabel labelUSATU = new JLabel("Уфимский государственный авиационный технический университет");
 public io() {
@@ -129,7 +130,7 @@ class SMB implements ActionListener{
 }
 class SecondEventListener implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
-		File jpgFile = new File("src/Lab1/mnemo.jpg");
+		File jpgFile = new File("Lab1/mnemo.jpg");
         if (jpgFile.exists()) {
             if (Desktop.isDesktopSupported()) {
                 try {
@@ -156,7 +157,7 @@ class BgPanel extends JPanel{
 public void paintComponent(Graphics g){
 Image im = null;
 try {
-im = ImageIO.read(new File("src/Lab1/logo.jpg"));
+im = ImageIO.read(new File("Lab1/logo.jpg"));
 } catch (IOException e) {}
 g.drawImage(im, 205,0, null);
 }
